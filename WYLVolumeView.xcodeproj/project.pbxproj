@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183D74CE1BC5048C00673625 /* WYLVolumeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D74CD1BC5048C00673625 /* WYLVolumeManager.m */; settings = {ASSET_TAGS = (); }; };
+		183D74D11BC509D400673625 /* WYLDevicVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D74D01BC509D400673625 /* WYLDevicVolumeView.m */; settings = {ASSET_TAGS = (); }; };
+		183D74D41BC50D7C00673625 /* IMG_3041.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 183D74D31BC50D7C00673625 /* IMG_3041.JPG */; settings = {ASSET_TAGS = (); }; };
+		183D74D71BC50D9600673625 /* CustomVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D74D61BC50D9600673625 /* CustomVolumeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		188441611BB829E900BAB06C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188441601BB829E900BAB06C /* main.m */; };
+		188441641BB829E900BAB06C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188441631BB829E900BAB06C /* AppDelegate.m */; };
+		1884416A1BB829E900BAB06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188441681BB829E900BAB06C /* Main.storyboard */; };
+		1884416C1BB829E900BAB06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1884416B1BB829E900BAB06C /* Assets.xcassets */; };
+		1884416F1BB829E900BAB06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1884416D1BB829E900BAB06C /* LaunchScreen.storyboard */; };
+		188441791BB8310600BAB06C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188441781BB8310600BAB06C /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1884417C1BB832D800BAB06C /* VolumeSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884417B1BB832D800BAB06C /* VolumeSliderController.m */; settings = {ASSET_TAGS = (); }; };
+		188441801BB8343500BAB06C /* WYLVolumeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884417F1BB8343500BAB06C /* WYLVolumeSlider.m */; settings = {ASSET_TAGS = (); }; };
+		188441841BB8348F00BAB06C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188441831BB8348F00BAB06C /* MediaPlayer.framework */; };
+		188441881BB8409800BAB06C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188441871BB8409800BAB06C /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		183D74CC1BC5048C00673625 /* WYLVolumeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLVolumeManager.h; sourceTree = "<group>"; };
+		183D74CD1BC5048C00673625 /* WYLVolumeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLVolumeManager.m; sourceTree = "<group>"; };
+		183D74CF1BC509D400673625 /* WYLDevicVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLDevicVolumeView.h; sourceTree = "<group>"; };
+		183D74D01BC509D400673625 /* WYLDevicVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLDevicVolumeView.m; sourceTree = "<group>"; };
+		183D74D31BC50D7C00673625 /* IMG_3041.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3041.JPG; sourceTree = "<group>"; };
+		183D74D51BC50D9600673625 /* CustomVolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomVolumeViewController.h; sourceTree = "<group>"; };
+		183D74D61BC50D9600673625 /* CustomVolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVolumeViewController.m; sourceTree = "<group>"; };
+		1884415C1BB829E900BAB06C /* WYLVolumeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYLVolumeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188441601BB829E900BAB06C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		188441621BB829E900BAB06C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		188441631BB829E900BAB06C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		188441691BB829E900BAB06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1884416B1BB829E900BAB06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1884416E1BB829E900BAB06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		188441701BB829E900BAB06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188441771BB8310600BAB06C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		188441781BB8310600BAB06C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1884417A1BB832D800BAB06C /* VolumeSliderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeSliderController.h; sourceTree = "<group>"; };
+		1884417B1BB832D800BAB06C /* VolumeSliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeSliderController.m; sourceTree = "<group>"; };
+		1884417E1BB8343500BAB06C /* WYLVolumeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLVolumeSlider.h; sourceTree = "<group>"; };
+		1884417F1BB8343500BAB06C /* WYLVolumeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLVolumeSlider.m; sourceTree = "<group>"; };
+		188441831BB8348F00BAB06C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		188441871BB8409800BAB06C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		188441591BB829E900BAB06C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188441881BB8409800BAB06C /* AVFoundation.framework in Frameworks */,
+				188441841BB8348F00BAB06C /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183D74CB1BC5048C00673625 /* WYLTouchManager */ = {
+			isa = PBXGroup;
+			children = (
+				183D74CC1BC5048C00673625 /* WYLVolumeManager.h */,
+				183D74CD1BC5048C00673625 /* WYLVolumeManager.m */,
+			);
+			path = WYLTouchManager;
+			sourceTree = "<group>";
+		};
+		183D74D21BC50D5F00673625 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				183D74D31BC50D7C00673625 /* IMG_3041.JPG */,
+			);
+			path = Img;
+			sourceTree = "<group>";
+		};
+		188441531BB829E900BAB06C = {
+			isa = PBXGroup;
+			children = (
+				188441871BB8409800BAB06C /* AVFoundation.framework */,
+				188441831BB8348F00BAB06C /* MediaPlayer.framework */,
+				1884415E1BB829E900BAB06C /* WYLVolumeView */,
+				1884415D1BB829E900BAB06C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1884415D1BB829E900BAB06C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1884415C1BB829E900BAB06C /* WYLVolumeView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1884415E1BB829E900BAB06C /* WYLVolumeView */ = {
+			isa = PBXGroup;
+			children = (
+				183D74D21BC50D5F00673625 /* Img */,
+				183D74CB1BC5048C00673625 /* WYLTouchManager */,
+				1884417D1BB8342000BAB06C /* WYLVolumeView */,
+				188441761BB8310600BAB06C /* ViewController */,
+				188441621BB829E900BAB06C /* AppDelegate.h */,
+				188441631BB829E900BAB06C /* AppDelegate.m */,
+				188441681BB829E900BAB06C /* Main.storyboard */,
+				1884416B1BB829E900BAB06C /* Assets.xcassets */,
+				1884416D1BB829E900BAB06C /* LaunchScreen.storyboard */,
+				188441701BB829E900BAB06C /* Info.plist */,
+				1884415F1BB829E900BAB06C /* Supporting Files */,
+			);
+			path = WYLVolumeView;
+			sourceTree = "<group>";
+		};
+		1884415F1BB829E900BAB06C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				188441601BB829E900BAB06C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		188441761BB8310600BAB06C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				188441771BB8310600BAB06C /* ViewController.h */,
+				188441781BB8310600BAB06C /* ViewController.m */,
+				1884417A1BB832D800BAB06C /* VolumeSliderController.h */,
+				1884417B1BB832D800BAB06C /* VolumeSliderController.m */,
+				183D74D51BC50D9600673625 /* CustomVolumeViewController.h */,
+				183D74D61BC50D9600673625 /* CustomVolumeViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1884417D1BB8342000BAB06C /* WYLVolumeView */ = {
+			isa = PBXGroup;
+			children = (
+				1884417E1BB8343500BAB06C /* WYLVolumeSlider.h */,
+				1884417F1BB8343500BAB06C /* WYLVolumeSlider.m */,
+				183D74CF1BC509D400673625 /* WYLDevicVolumeView.h */,
+				183D74D01BC509D400673625 /* WYLDevicVolumeView.m */,
+			);
+			path = WYLVolumeView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1884415B1BB829E900BAB06C /* WYLVolumeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 188441731BB829E900BAB06C /* Build configuration list for PBXNativeTarget "WYLVolumeView" */;
+			buildPhases = (
+				188441581BB829E900BAB06C /* Sources */,
+				188441591BB829E900BAB06C /* Frameworks */,
+				1884415A1BB829E900BAB06C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYLVolumeView;
+			productName = WYLVolumeView;
+			productReference = 1884415C1BB829E900BAB06C /* WYLVolumeView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		188441541BB829E900BAB06C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = wyl;
+				TargetAttributes = {
+					1884415B1BB829E900BAB06C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 188441571BB829E900BAB06C /* Build configuration list for PBXProject "WYLVolumeView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 188441531BB829E900BAB06C;
+			productRefGroup = 1884415D1BB829E900BAB06C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1884415B1BB829E900BAB06C /* WYLVolumeView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1884415A1BB829E900BAB06C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884416F1BB829E900BAB06C /* LaunchScreen.storyboard in Resources */,
+				1884416C1BB829E900BAB06C /* Assets.xcassets in Resources */,
+				1884416A1BB829E900BAB06C /* Main.storyboard in Resources */,
+				183D74D41BC50D7C00673625 /* IMG_3041.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		188441581BB829E900BAB06C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884417C1BB832D800BAB06C /* VolumeSliderController.m in Sources */,
+				183D74D71BC50D9600673625 /* CustomVolumeViewController.m in Sources */,
+				188441641BB829E900BAB06C /* AppDelegate.m in Sources */,
+				188441791BB8310600BAB06C /* ViewController.m in Sources */,
+				183D74D11BC509D400673625 /* WYLDevicVolumeView.m in Sources */,
+				188441801BB8343500BAB06C /* WYLVolumeSlider.m in Sources */,
+				183D74CE1BC5048C00673625 /* WYLVolumeManager.m in Sources */,
+				188441611BB829E900BAB06C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		188441681BB829E900BAB06C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188441691BB829E900BAB06C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1884416D1BB829E900BAB06C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1884416E1BB829E900BAB06C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		188441711BB829E900BAB06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		188441721BB829E900BAB06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		188441741BB829E900BAB06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = WYLVolumeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.WYLVolumeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		188441751BB829E900BAB06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = WYLVolumeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.WYLVolumeView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		188441571BB829E900BAB06C /* Build configuration list for PBXProject "WYLVolumeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188441711BB829E900BAB06C /* Debug */,
+				188441721BB829E900BAB06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		188441731BB829E900BAB06C /* Build configuration list for PBXNativeTarget "WYLVolumeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188441741BB829E900BAB06C /* Debug */,
+				188441751BB829E900BAB06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 188441541BB829E900BAB06C /* Project object */;
+}
