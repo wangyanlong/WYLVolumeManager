@@ -6,8 +6,8 @@
 //  Copyright © 2015年 wyl. All rights reserved.
 //
 
-#import "WYLVolumeSlider.h"
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <UIKit/UIKit.h>
 
