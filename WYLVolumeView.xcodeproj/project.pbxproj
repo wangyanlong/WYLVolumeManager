@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183D74CE1BC5048C00673625 /* WYLVolumeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D74CD1BC5048C00673625 /* WYLVolumeManager.m */; settings = {ASSET_TAGS = (); }; };
 		183D74D11BC509D400673625 /* WYLDevicVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D74D01BC509D400673625 /* WYLDevicVolumeView.m */; settings = {ASSET_TAGS = (); }; };
 		183D74D41BC50D7C00673625 /* IMG_3041.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 183D74D31BC50D7C00673625 /* IMG_3041.JPG */; settings = {ASSET_TAGS = (); }; };
 		183D74D71BC50D9600673625 /* CustomVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D74D61BC50D9600673625 /* CustomVolumeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		185FFB0F1BC90E5500CE8833 /* WYLVolumeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FFB0E1BC90E5500CE8833 /* WYLVolumeManager.m */; settings = {ASSET_TAGS = (); }; };
 		188441611BB829E900BAB06C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188441601BB829E900BAB06C /* main.m */; };
 		188441641BB829E900BAB06C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188441631BB829E900BAB06C /* AppDelegate.m */; };
 		1884416A1BB829E900BAB06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188441681BB829E900BAB06C /* Main.storyboard */; };
@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		183D74CC1BC5048C00673625 /* WYLVolumeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLVolumeManager.h; sourceTree = "<group>"; };
-		183D74CD1BC5048C00673625 /* WYLVolumeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLVolumeManager.m; sourceTree = "<group>"; };
 		183D74CF1BC509D400673625 /* WYLDevicVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLDevicVolumeView.h; sourceTree = "<group>"; };
 		183D74D01BC509D400673625 /* WYLDevicVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLDevicVolumeView.m; sourceTree = "<group>"; };
 		183D74D31BC50D7C00673625 /* IMG_3041.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3041.JPG; sourceTree = "<group>"; };
 		183D74D51BC50D9600673625 /* CustomVolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomVolumeViewController.h; sourceTree = "<group>"; };
 		183D74D61BC50D9600673625 /* CustomVolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVolumeViewController.m; sourceTree = "<group>"; };
+		185FFB0D1BC90E5500CE8833 /* WYLVolumeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLVolumeManager.h; sourceTree = "<group>"; };
+		185FFB0E1BC90E5500CE8833 /* WYLVolumeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLVolumeManager.m; sourceTree = "<group>"; };
 		1884415C1BB829E900BAB06C /* WYLVolumeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYLVolumeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188441601BB829E900BAB06C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		188441621BB829E900BAB06C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,21 +62,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		183D74CB1BC5048C00673625 /* WYLTouchManager */ = {
-			isa = PBXGroup;
-			children = (
-				183D74CC1BC5048C00673625 /* WYLVolumeManager.h */,
-				183D74CD1BC5048C00673625 /* WYLVolumeManager.m */,
-			);
-			path = WYLTouchManager;
-			sourceTree = "<group>";
-		};
 		183D74D21BC50D5F00673625 /* Img */ = {
 			isa = PBXGroup;
 			children = (
 				183D74D31BC50D7C00673625 /* IMG_3041.JPG */,
 			);
 			path = Img;
+			sourceTree = "<group>";
+		};
+		185FFB0C1BC90E5500CE8833 /* WYLVolumeManager */ = {
+			isa = PBXGroup;
+			children = (
+				185FFB0D1BC90E5500CE8833 /* WYLVolumeManager.h */,
+				185FFB0E1BC90E5500CE8833 /* WYLVolumeManager.m */,
+			);
+			path = WYLVolumeManager;
 			sourceTree = "<group>";
 		};
 		188441531BB829E900BAB06C = {
@@ -100,8 +100,8 @@
 		1884415E1BB829E900BAB06C /* WYLVolumeView */ = {
 			isa = PBXGroup;
 			children = (
+				185FFB0C1BC90E5500CE8833 /* WYLVolumeManager */,
 				183D74D21BC50D5F00673625 /* Img */,
-				183D74CB1BC5048C00673625 /* WYLTouchManager */,
 				1884417D1BB8342000BAB06C /* WYLVolumeView */,
 				188441761BB8310600BAB06C /* ViewController */,
 				188441621BB829E900BAB06C /* AppDelegate.h */,
@@ -222,9 +222,9 @@
 				183D74D71BC50D9600673625 /* CustomVolumeViewController.m in Sources */,
 				188441641BB829E900BAB06C /* AppDelegate.m in Sources */,
 				188441791BB8310600BAB06C /* ViewController.m in Sources */,
+				185FFB0F1BC90E5500CE8833 /* WYLVolumeManager.m in Sources */,
 				183D74D11BC509D400673625 /* WYLDevicVolumeView.m in Sources */,
 				188441801BB8343500BAB06C /* WYLVolumeSlider.m in Sources */,
-				183D74CE1BC5048C00673625 /* WYLVolumeManager.m in Sources */,
 				188441611BB829E900BAB06C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
