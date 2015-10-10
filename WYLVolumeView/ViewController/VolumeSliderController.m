@@ -42,8 +42,8 @@
     
     WYLVolumeSlider *slider1 = (WYLVolumeSlider *)[self.view viewWithTag:1000];
     
-    [manager touchMove:event withTouchView:self.view withTouchBlock:^(float a) {
-        slider1.slider.value += a;
+    [manager touchMove:event withTouchView:self.view withTouchBlock:^(float num) {
+        slider1.slider.value += num;
     }];
 }
 

@@ -39,13 +39,10 @@
         [self addSubview:self.progressLabel];
     }
     
-    
     if (self.showImageView) {
         self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0 + self.titleLabel.frame.size.height, self.frame.size.width, self.frame.size.height - self.progressLabel.frame.size.height - self.titleLabel.frame.size.height)];
         [self addSubview:self.imageView];
     }
-    
-    
 
 }
 

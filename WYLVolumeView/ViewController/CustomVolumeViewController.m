@@ -64,17 +64,24 @@
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     
-    [manager touchMove:event withTouchView:self.view withTouchBlock:^(float a) {
-        customVolumeView.value +=a;
-        CGFloat num = 0.0;
-        num = customVolumeView.value *100;
+    __weak __block WYLVolumeManager * _manager = manager;
+    
+    [_manager touchMove:event withTouchView:self.view withTouchBlock:^(float num) {
         
-        if (num > 100) {
-            num = 100.0;
-        }else if (num < 0){
-            num = 0.0;
+        customVolumeView.value +=num;
+        
+        _manager.volume.value = customVolumeView.value;
+        
+        CGFloat numTest = 0.0;
+        
+        numTest = customVolumeView.value *100;
+        
+        if (numTest > 100) {
+            numTest = 100.0;
+        }else if (numTest < 0){
+            numTest = 0.0;
         }else{
-            customVolumeView.progressLabel.text = [NSString stringWithFormat:@"系统音量为 : %.2f%%",num];
+            customVolumeView.progressLabel.text = [NSString stringWithFormat:@"系统音量为 : %.2f%%",numTest];
         }
         
     }];

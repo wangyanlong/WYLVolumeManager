@@ -8,6 +8,14 @@
 
 #import "WYLVolumeManager.h"
 
+@interface WYLVolumeManager ()
+
+@property (nonatomic,assign)CGPoint firstPoint;
+@property (nonatomic,assign)CGPoint secondPoint;
+@property (nonatomic,strong)MPVolumeView *volumeView;
+
+@end
+
 @implementation WYLVolumeManager
 
 - (CGFloat)deviceVolume{
@@ -15,13 +23,24 @@
 }
 
 - (void)hiddenDeviceSoundViewWithParentView:(UIView *)parentView{
-    
-    MPVolumeView *volumeView = [[MPVolumeView alloc] init];
-    [parentView addSubview:volumeView];
-    [volumeView sizeToFit];
-    volumeView.hidden = NO;
-    volumeView.frame = CGRectMake(-1000, 100, 100, 100);
 
+    self.volumeView = [[MPVolumeView alloc] init];
+    [parentView addSubview:self.volumeView];
+    [self.volumeView sizeToFit];
+    self.volumeView.hidden = NO;
+    self.volumeView.frame = CGRectMake(-1000, 100, 100, 100);
+
+    self.volume = [[UISlider alloc]init];
+    for (UIControl *view in self.volumeView.subviews) {
+        if ([view.superclass isSubclassOfClass:[UISlider class]]) {
+            self.volume = (UISlider *)view;
+        }
+    }
+    
+    float vol = [[AVAudioSession sharedInstance] outputVolume];
+    
+    self.volume.value = vol;
+    
 }
 
 - (void)touchBegin:(UIEvent *)event withTouchView:(UIView *)view{
@@ -31,9 +50,10 @@
         self.firstPoint = [touch locationInView:view];
         
     }
+    
 }
 
-- (void)touchMove:(UIEvent *)event withTouchView:(UIView *)view withTouchBlock:(void(^)(float a))block{
+- (void)touchMove:(UIEvent *)event withTouchView:(UIView *)view withTouchBlock:(void(^)(float num))block{
 
     for(UITouch *touch in event.allTouches) {
         
