@@ -14,11 +14,6 @@
 @property (nonatomic, strong) UILabel *progressLabel;
 @property (nonatomic, strong) UIImageView *imageView;
 
-@property (nonatomic, assign) CGFloat value;
-@property (nonatomic, assign) BOOL showTitleLabel;
-@property (nonatomic, assign) BOOL showProgressLabel;
-@property (nonatomic, assign) BOOL showImageView;
-
 - (void)conifgDeviceVolumeView;
 
 @end

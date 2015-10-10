@@ -23,27 +23,27 @@
 }
 
 - (void)conifgDeviceVolumeView{
+    
+    self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
+    
+    self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height/4.0)];
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.titleLabel];
 
-    self.titleLabel = nil;
-    self.progressLabel = nil;
-    
-    if (self.showTitleLabel) {
-        self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height/4.0)];
-        self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:self.titleLabel];
-    }
-    
-    if (self.showProgressLabel) {
-        self.progressLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.frame.size.height/4.0*3, self.frame.size.width, self.frame.size.height/4.0)];
-        self.progressLabel.textAlignment = NSTextAlignmentCenter;
-        [self addSubview:self.progressLabel];
-    }
-    
-    if (self.showImageView) {
-        self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0 + self.titleLabel.frame.size.height, self.frame.size.width, self.frame.size.height - self.progressLabel.frame.size.height - self.titleLabel.frame.size.height)];
-        [self addSubview:self.imageView];
-    }
 
+    self.progressLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, self.frame.size.height/4.0*3, self.frame.size.width, self.frame.size.height/4.0)];
+    self.progressLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.progressLabel];
+
+
+    self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0 + self.titleLabel.frame.size.height, self.frame.size.width, self.frame.size.height - self.progressLabel.frame.size.height - self.titleLabel.frame.size.height)];
+    [self addSubview:self.imageView];
+    
+    self.titleLabel.textColor = self.progressLabel.textColor = [UIColor whiteColor];
+    
+    self.imageView.image = [UIImage imageNamed:@"IMG_3041.JPG"];
+    self.titleLabel.text = @"现在的系统音量";
+    
 }
 
 /*

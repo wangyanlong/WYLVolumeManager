@@ -11,6 +11,4 @@
 
 @interface WYLVolumeSlider : UISlider
 
-@property (nonatomic,strong)UISlider *slider;
-
 @end

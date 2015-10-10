@@ -18,17 +18,57 @@
 
 @implementation WYLVolumeManager
 
-- (CGFloat)deviceVolume{
-    return [[AVAudioSession sharedInstance] outputVolume];
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)hiddenDeviceSoundViewWithParentView:(UIView *)parentView{
+- (instancetype)init{
+    
+    self = [super init];
+    
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(volumeChanged:) name:@"AVSystemController_SystemVolumeDidChangeNotification" object:nil];
+    }
+    
+    return self;
+    
+}
+
+- (void)volumeChanged:(NSNotification *)not{
+    
+    float vol = [[not.userInfo objectForKey:@"AVSystemController_AudioVolumeNotificationParameter"] floatValue];
+    self.volume.value = vol;
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(systemVolumeDidChange:)]) {
+        [self.delegate systemVolumeDidChange:vol];
+    }
+    
+}
+
+- (CGFloat)deviceVolume{
+    
+    return [[AVAudioSession sharedInstance] outputVolume];
+
+}
+
+- (void)configureVolumeManager{
+    
+}
+
+- (void)configureVolumeManagerWithParentView:(UIView *)parentView hiddenDeviceVolumeView:(BOOL)hidden{
 
     self.volumeView = [[MPVolumeView alloc] init];
     [parentView addSubview:self.volumeView];
     [self.volumeView sizeToFit];
-    self.volumeView.hidden = NO;
+    
+    if (hidden) {
+        self.volumeView.hidden = NO;
+    }else{
+        self.volumeView.hidden = YES;
+    }
     self.volumeView.frame = CGRectMake(-1000, 100, 100, 100);
+
 
     self.volume = [[UISlider alloc]init];
     for (UIControl *view in self.volumeView.subviews) {
