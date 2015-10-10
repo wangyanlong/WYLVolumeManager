@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WYLVolumeManager"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Help developers custom iPhone Volume View"
   s.description      = <<-DESC
 			Help developers custom iPhone Volume View. 553836854@qq.com            
